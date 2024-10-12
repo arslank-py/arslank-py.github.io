@@ -1,0 +1,71 @@
+---
+title: notes
+---
+
+<html>
+<head>
+    <title>Arslan Krebs</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='I am a fourth-year math and economics major at OSU.'>
+    <meta name='keywords' content='
+        analysis
+    '>
+    <meta name='author' content='Arslan Krebs'>
+
+    <link href='/css/blog.css' rel='stylesheet'/>
+
+    {% include mathjax.html %}
+	<style>
+	/* Remove bullet points */
+	ul {
+	    list-style-type: none;
+	    padding-left: 0;
+	}
+
+	/* Style for chapters and sections */
+	.topic {
+	    margin-top: 1em;
+	    font-size: 1.2em;
+	    font-weight: bold;
+	    margin-left: 0em;
+	}
+	
+	.chapter {
+	    margin-top: 0em;
+	    font-weight: bold;
+	    margin-left: 1.5em;
+	}
+
+	.section {
+	    margin-top: 0em;
+	    font-weight: normal;
+	    margin-left: 3em;
+	}
+
+
+	</style>
+</head>
+
+<body>
+    {% include nav.html %}
+    <div id='blog' class='wrap'>
+    	<h1> Notes </h1>
+    	<em> This is a collection of personal notes from topics I have an interest in. This is a small project as a means of writing to learn. I make no claim of originality of content nor correctness. . </em>
+                {% assign topics = site.notes | group_by: "topic" %}
+                {% for topic in topics %}
+                    <div class="topic">{{ topic.name }}</div>
+                    {% assign chapters = topic.items | group_by: "chapter" %}
+                    {% for chapter in chapters %}
+                        <div class="chapter">{{ forloop.index }}. {{ chapter.name }}</div>
+                        {% assign sections = chapter.items | sort: "section" %}
+                        {% for section in sections %}
+                            <div class="section">{{ forloop.parentloop.index }}.{{ forloop.index }}: <a href="{{ section.url }}">{{ section.title }}</a></div>
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+	
+    </div>
+</body>
+</html>
