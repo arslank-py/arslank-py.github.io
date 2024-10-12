@@ -107,13 +107,13 @@
     background: var(--bg);
 }
 .corollary:before {
-    content: 'Proposition 'counter(prop)'.';
+    content: 'Corollary 'counter(prop)'.';
     font-weight: bold;
     font-style: normal;
     display: block;
 }
 .corollary[name]:before {
-    content: 'Proposition 'counter(prop)' (' attr(name) ').';
+    content: 'Corollary 'counter(prop)' (' attr(name) ').';
     font-weight: bold;
     font-style: normal;
     display: block;
