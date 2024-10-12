@@ -15,14 +15,7 @@
     display: block;
     font-weight: bold;
 }
-.theorem:before {
-    content: 'Theorem 'counter(theorem)'.';
-    font-weight: bold;
-    font-style: normal;
-    display: block;
-}
-.theorem[name]:before {
-    content: 'Theorem 'counter(theorem)' (' attr(name) ').';
+.theorem-title {
     font-weight: bold;
     font-style: normal;
     display: block;
@@ -33,19 +26,7 @@
     counter-increment: lemma;
     background: var(--bg);
 }
-.math {
-    font-style: normal;
-    display: block;
-    font-weight: bold;
-}
-.lemma:before {
-    content: 'Lemma 'counter(lemma)'.';
-    font-weight: bold;
-    font-style: normal;
-    display: block;
-}
-.lemma[name]:before {
-    content: 'Lemma 'counter(lemma)' (' attr(name) ').';
+.lemma-title {
     font-weight: bold;
     font-style: normal;
     display: block;
@@ -57,42 +38,29 @@
     display: block;
 }
 .proof summary {
-    font-style: italic; /* Italicize the "Proof." label */
+    font-style: italic;
     display: inline-block;
-    cursor: pointer; /* Change cursor to pointer for better UX */
+    cursor: pointer;
 }
 .proof summary::after {
-  content: '►';
+    content: '►';
 }
 .proof[open] summary::after {
-  content: "▼";
+    content: "▼";
 }
 .proof[open]::after {
-    content: "\25FC"; /* Decorative square */
-    float: right; /* Align it to the right */
-    margin-top: 0.5em; /* Add some spacing from the content above */
-    margin-bottom: 2em
+    content: "\25FC"; 
+    float: right;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
 }
-
 .definition {
     margin-top: var(--top);
     font-style: normal;
     counter-increment: definition;
     background: var(--bg);
 }
-.math {
-    font-style: normal;
-    display: block;
-    font-weight: bold;
-}
-.definition:before {
-    content: 'Definition 'counter(definition)'.';
-    font-weight: bold;
-    font-style: normal;
-    display: block;
-}
-.definition[name]:before {
-    content: 'Definition 'counter(definition)' (' attr(name) ').';
+.definition-title {
     font-weight: bold;
     font-style: normal;
     display: block;
@@ -103,19 +71,7 @@
     counter-increment: prop;
     background: var(--bg);
 }
-.math {
-    font-style: normal;
-    display: block;
-    font-weight: bold;
-}
-.proposition:before {
-    content: 'Proposition 'counter(prop)'.';
-    font-weight: bold;
-    font-style: normal;
-    display: block;
-}
-.proposition[name]:before {
-    content: 'Proposition 'counter(prop)' (' attr(name) ').';
+.proposition-title {
     font-weight: bold;
     font-style: normal;
     display: block;
@@ -126,19 +82,7 @@
     counter-increment: corollary;
     background: var(--bg);
 }
-.math {
-    font-style: normal;
-    display: block;
-    font-weight: bold;
-}
-.corollary:before {
-    content: 'Corollary 'counter(corollary)'.';
-    font-weight: bold;
-    font-style: normal;
-    display: block;
-}
-.corollary[name]:before {
-    content: 'Corollary 'counter(corollary)' (' attr(name) ').';
+.corollary-title {
     font-weight: bold;
     font-style: normal;
     display: block;

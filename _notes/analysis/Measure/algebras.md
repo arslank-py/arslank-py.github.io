@@ -27,8 +27,9 @@ Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is an 
 That is, $\mathscr{A}$ is closed under complimentation, under formation of finite unions, and under formation of finite intersections. 
 </div>
 
-<div class='definition' name='$\sigma$-Algebras'>
-Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is a $\sigma$-algebra on $X$ if
+<div class='definition'>
+<div class=<definition-title>Theorem 1. $\sigma$-Algebras
+<p>Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is a $\sigma$-algebra on $X$ if
 <ol type="(a)">
     <li>$X\in\mathscr{A}$,</li>
     <li>for each set $A\in\mathscr{A}$, the set $A^c\in\mathscr{A}$,</li>
@@ -36,11 +37,11 @@ Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is a $
     <li>for each infinite sequence $\{A_i\}\in\mathscr{A}$, the set $\bigcap_{i=1}^\infty A_i\in\mathscr{A}$.</li>
 </ol>
 
-Thus, $\mathscr{A}$ is closed under complimentation, under formation of countable unions, and under formation of countable intersections. If $\mathscr{A}$ is a $\sigma$-algebra on the set $X$, it is convenient to call a subset $A\subseteq X$ $\mathscr{A}$-measurable if $A\in\mathscr{A}$. 
+Thus, $\mathscr{A}$ is closed under complimentation, under formation of countable unions, and under formation of countable intersections. If $\mathscr{A}$ is a $\sigma$-algebra on the set $X$, it is convenient to call a subset $A\subseteq X$ $\mathscr{A}$-measurable if $A\in\mathscr{A}$. </p>
 </div>
 
 <div class='proposition' name='Intersection of a collection of $\sigma$-algebras'>
-Let $X$ be a set. Then the intersection of an arbitrary nonempty collection of $\sigma$-algebras on $X$ is a $\sigma$-algebra on $X$. 
+Let $X$ be a set. Then the intersection of an arbitrary nonempty collection of $\sigma$-algebras on $X$ is a $\sigma$-algebra on $X$.
 </div>
 
 
