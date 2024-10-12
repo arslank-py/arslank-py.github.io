@@ -59,11 +59,13 @@
     content: 'Definition 'counter(definition)'.';
     font-weight: bold;
     font-style: normal;
+    display: block;
 }
 .definition[name]:before {
     content: 'Definition 'counter(definition)' (' attr(name) ').';
     font-weight: bold;
     font-style: normal;
+    display: block;
 }
 .proposition {
     display: block;
@@ -75,11 +77,13 @@
     content: 'Proposition 'counter(prop)'.';
     font-weight: bold;
     font-style: normal;
+    display: block;
 }
 .proposition[name]:before {
     content: 'Proposition 'counter(prop)' (' attr(name) ').';
     font-weight: bold;
     font-style: normal;
+    display: block;
 }
 .corollary {
     margin-top: var(--top);
