@@ -46,7 +46,7 @@ Let $X$ be a set. Then the intersection of an arbitrary nonempty collection of $
 
 <details class='proof'>
 <summary>Proof.</summary>
-Let $\mathscr{C}$ be a nonempty collection of $\sigma$-algebras on $X$, and let $\mathscr{A}$ be the intersection of the $\sigma$-algebras that belong to $\mathscr{C}. It is sufficient to check that $X\in\mathscr{A}$, is closed under complimentation, and closed under the formation of countable unions. 
+Let $\mathscr{C}$ be a nonempty collection of $\sigma$-algebras on $X$, and let $\mathscr{A}$ be the intersection of the $\sigma$-algebras that belong to $\mathscr{C}$. It is sufficient to check that $X\in\mathscr{A}$, is closed under complimentation, and closed under the formation of countable unions. 
 
 <br><br>
 The set $X\in\mathscr{A}$ since it belongs to each $\sigma$-algebra that belongs to $\mathscr{C}$. Now suppose that $A\in\mathscr{A}$. Then each $\sigma$-algebra that belongs to $\mathscr{C}$ also contains $A$ and so contains $A^c$; thus $A^c$ belongs to the intersection $\mathscr{A}$ of these $\sigma$-algebras. Finally, suppose that $\{A_i\}\in\mathscr{A}$ and hence to each $\sigma$-algebra in $\mathscr{C}$. Then $\bigcup_i A_i$ belongs to each $\sigma$-algebra in $\mathscr{C}$ and so to $\mathscr{A}$.
