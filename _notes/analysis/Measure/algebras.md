@@ -45,7 +45,7 @@ Let $X$ be a set. Then the intersection of an arbitrary nonempty collection of $
 
 
 <details class='proof'>
-<summary> </summary>
+<summary>Proof.</summary>
 Let $\mathscr{C}$ be a nonempty collection of $\sigma$-algebras on $X$, and let $\mathscr{A}$ be the intersection of the $\sigma$-algebras that belong to $\mathscr{C}. It is sufficient to check that $X\in\mathscr{A}$, is closed under complimentation, and closed under the formation of countable unions. 
 
 <br><br>
@@ -60,7 +60,7 @@ To say $\mathscr{A}$ is the smallset $\sigma$-algebra on $X$ that includes $\mat
 </div>
 
 <details class='proof'>
-<summary> </summary>
+<summary>Proof.</summary>
 Let $\CC$ be the collection of all $\sigma$-algebras on $X$ that includes $\FF$. Then $\CC$ is nonempty, since it contains the $\sigma$-algebra that consists of all subsets of $X$. The intersection of the $\sigma$-algebras that belong to $\CC$ is, according to Proposition (1), a $\sigma$-algebra; it includes $\FF$ and is included in every $\sigma$-algebra in $\CC$ -- that is, it is included in every $\sigma$-algebra on $X$ that includes $\FF$. 
 </details>
 
