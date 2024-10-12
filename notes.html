@@ -70,5 +70,15 @@ title: notes
                 {% endfor %}
 	
     </div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			MathJax.typesetPromise();
+		});
+		
+		function renderMath() {
+			MathJax.typesetPromise();
+		}
+		</script>
 </body>
 </html>
