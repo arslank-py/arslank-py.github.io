@@ -10,6 +10,11 @@
     counter-increment: theorem;
     background: var(--bg);
 }
+.math {
+    font-style: normal;
+    display: block;
+    font-weight: bold;
+}
 .theorem:before {
     content: 'Theorem 'counter(theorem)'.';
     font-weight: bold;
@@ -27,6 +32,11 @@
     font-style: italic;
     counter-increment: lemma;
     background: var(--bg);
+}
+.math {
+    font-style: normal;
+    display: block;
+    font-weight: bold;
 }
 .lemma:before {
     content: 'Lemma 'counter(lemma)'.';
@@ -70,6 +80,11 @@
     counter-increment: definition;
     background: var(--bg);
 }
+.math {
+    font-style: normal;
+    display: block;
+    font-weight: bold;
+}
 .definition:before {
     content: 'Definition 'counter(definition)'.';
     font-weight: bold;
@@ -88,6 +103,11 @@
     counter-increment: prop;
     background: var(--bg);
 }
+.math {
+    font-style: normal;
+    display: block;
+    font-weight: bold;
+}
 .proposition:before {
     content: 'Proposition 'counter(prop)'.';
     font-weight: bold;
@@ -105,6 +125,11 @@
     font-style: italic;
     counter-increment: corollary;
     background: var(--bg);
+}
+.math {
+    font-style: normal;
+    display: block;
+    font-weight: bold;
 }
 .corollary:before {
     content: 'Corollary 'counter(corollary)'.';
