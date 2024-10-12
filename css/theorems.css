@@ -3,6 +3,7 @@
     --bottom: 0em;
     --bg: lavender;
 }
+
 .theorem {
     display: block;
     margin-left: 4.5%; margin-right: 4.5%; margin-top: 2em;
