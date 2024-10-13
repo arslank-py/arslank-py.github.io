@@ -1,5 +1,5 @@
 ---
-title: "Algebras, Sigma-Algebras, and the Borel Sigma-Algebra"
+title: "Algebras, $\sigma$-Algebras, and the Borel $\sigma$-Algebra"
 topic: "Analysis"
 chapter: "Measure Theory"
 section: "algebras"
