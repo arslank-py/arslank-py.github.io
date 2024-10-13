@@ -31,9 +31,9 @@ A measure (or countably additive measure) on $\AA$ is a function $\mu:\AA\to[0,+
 </ol>
 </div>
 
-The finite analogue of both definitions hold, where $\AA$ is an algebra and $\mu:\AA\to[0,+\infty]$ is finitely additive and satsfies $\mu(\emptyset)=0$ . In fact, every countably additive measure is finitely additive (let $A_i=\emptyset $ if $ i>n$). 
+The finite analogue of both definitions hold, where $\AA$ is an algebra and $\mu:\AA\to[0,+\infty]$ is finitely additive and satsfies $\mu(\emptyset)=0$ . In fact, every countably additive measure is finitely additive (let $A_i=\emptyset $ for $ i>n$). 
 
-We are now ready to define the main objects of interest in Measure Theory. 
+We are now ready to define one of the primary building blocks in Measure Theory, providing the structure needed to work with integration to probability to analysis of functions. 
 
 <div class='definition' name='Measure space'>
 If $X$ is a set, $\AA$ a $\sigma$-algebra on $X$, and $\mu$ a measure on $\AA$, then the triplet $(X,\AA,\mu) $ is called a measure space. Likewise, if $X$ is a set and $\AA$ is a $\sigma$-algebra on $X$, then the pair $(X,\AA) $ is called a measurable space. If $(X,\AA,\mu) $ is a measure space, then we say $\mu$ is a measure on $(X,\AA) $. 
