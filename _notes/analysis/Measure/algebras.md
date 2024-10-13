@@ -45,7 +45,6 @@ Thus, $\mathscr{A}$ is closed under complimentation, under formation of countabl
 Let $X$ be a set. Then the intersection of an arbitrary nonempty collection of $\sigma$-algebras on $X$ is a $\sigma$-algebra on $X$. 
 </div>
 
-
 <details class='proof'>
 <summary>Proof.</summary>
 Let $\mathscr{C}$ be a nonempty collection of $\sigma$-algebras on $X$, and let $\mathscr{A}$ be the intersection of the $\sigma$-algebras that belong to $\mathscr{C}$. It is sufficient to check that $X\in\mathscr{A}$, is closed under complimentation, and closed under the formation of countable unions. 
