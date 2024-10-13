@@ -15,7 +15,7 @@ references: "Cohn, Donald. (2013). Measure theory. 2nd revised ed."
 
 ## Algebras and $\sigma$-Algebras
 
-We first state the definitions of two important collections of sets, algebras and $\sigma$-algebras, as well as their algebraic structures. 
+We first state the definitions of two important collections of sets, algebras and $\sigma$-algebras, as well as their algebraic structures. These are the objects whose sizes we measure.
 
 <div class='definition' name='Algebras'>
 Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is an algebra on $X$ if
