@@ -13,6 +13,8 @@ published: true
 references: "Cohn, Donald. (2013). Measure theory. 2nd revised ed."
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 We state the definitions of two important collections of sets, algebras and $\sigma$-algebras, as well as their algebraic structures. 
 
 <div class='definition' name='Algebras'>
@@ -27,7 +29,7 @@ Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is an 
 
 That is, $\mathscr{A}$ is closed under complimentation, under formation of finite unions, and under formation of finite intersections. 
 
-<div class='definition' name='/(\sigma/)-Algebras'>
+<div class='definition' name='σ-Algebras'>
 Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is a $\sigma$-algebra on $X$ if
 <ol type="(a)">
     <li>$X\in\mathscr{A}$,</li>
@@ -39,7 +41,7 @@ Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is a $
 
 Thus, $\mathscr{A}$ is closed under complimentation, under formation of countable unions, and under formation of countable intersections. If $\mathscr{A}$ is a $\sigma$-algebra on the set $X$, it is convenient to call a subset $A\subseteq X$ $\mathscr{A}$-measurable if $A\in\mathscr{A}$. 
 
-<div class='proposition' name='Intersection of a collection of \( \sigma \)-algebras'>
+<div class='proposition' name='Intersection of a collection of σ-algebras'>
 Let $X$ be a set. Then the intersection of an arbitrary nonempty collection of $\sigma$-algebras on $X$ is a $\sigma$-algebra on $X$. 
 </div>
 
