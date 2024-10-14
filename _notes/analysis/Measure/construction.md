@@ -82,7 +82,7 @@ More generally, a set $A\in\AA$ is $\sigma$-finite under $\mu$ if it is the coun
 
 $\sigma$-finite measures generalize finite measures and allows for spaces with potentially infinite measure to be decomposed into countably many subsets with finite measure. This allows the application of techniques of finite-measure to be extended to infinite-measure problems. 
 
-**Note:** If the measure space $(X,\AA,\mu) $  is $\sigma$-finite, then $X$ is the union of a sequence $\\{B_i\}\$ of disjoint sets that belong to $\AA$ and have finite measure under $\mu$; this alternative disjoint sequence \$\{B_i\}\$ can be formed by choosing a sequence $\{A_i\}$ as in the definition of $\sigma$-finiteness, and then letting
+**Note:** If the measure space $(X,\AA,\mu) $  is $\sigma$-finite, then $X$ is the union of a sequence $$\{B_i\}$$ of disjoint sets that belong to $\AA$ and have finite measure under $\mu$; this alternative disjoint sequence $$\{B_i\}$$ can be formed by choosing a sequence $$\{A_i\}$$ as in the definition of $\sigma$-finiteness, and then letting
 \\[
 B_1=A_1, \quad\text{and}\quad B_i=A_i-\left(\bigcup_{j=1}^{i-1} A_j\right) \quad\text{if}\quad i>1. 
 \\] 
