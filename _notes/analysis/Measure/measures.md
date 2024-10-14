@@ -1,10 +1,10 @@
 ---
-title: "Construction of Measures"
+title: "Measures and some Properties"
 topic: "Analysis"
 chapter: "Measure Theory"
-section: "construction"
+section: "measures"
 layout: note
-permalink: "/notes/analysis/measure/construction/"
+permalink: "/notes/analysis/measure/measures/"
 
 subtitle: 
 date: 2024-10-11
@@ -78,6 +78,20 @@ X=\bigcup_{i=1}^\infty A_i \quad\text{for all}\quad i\in\N.
 
 More generally, a set $A\in\AA$ is $\sigma$-finite under $\mu$ if it is the countable union of a sequence of sets that belong to $\AA$ and have finite measure under $\mu$. 
 </div>
+
+#### Example: 
+
+Consider $(\R,\BB(\R),\lambda) $, where $\BB(\R)$ is the Borel $\sigma$-algebra on $\R$ and $\lambda$ is the Lebesgue measure: $\lambda([a,b])=b-a$. 
+
+$(\R,\BB(\R),\lambda) $ is $\sigma$-finite: Clearly, $\lambda(\R)=+\infty$. $\R$ can be expressed as the countable union of sets with finite measure. Let
+\[\
+\R=\bigcup_{n=1}^\infty I_n, \quad\text{where}\quad I_n=[-n,n].
+\\]
+Since $n$ is a finite real number and for each interval $I_n\in\BB(\R)$ we have that
+\\[
+\lambda(I_n)=\lambda([-n,n])=2n<+\infty,
+\\]
+$(\R,\BB(\R),\lambda) $ is $\sigma$-finite. 
 
 $\sigma$-finite measures generalize finite measures and allows for spaces with potentially infinite measure to be decomposed into countably many subsets with finite measure. This allows the application of techniques of finite-measure to be extended to infinite-measure problems. 
 
