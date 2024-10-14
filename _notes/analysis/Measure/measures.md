@@ -84,7 +84,7 @@ More generally, a set $A\in\AA$ is $\sigma$-finite under $\mu$ if it is the coun
 Consider $(\R,\BB(\R),\lambda) $, where $\BB(\R)$ is the Borel $\sigma$-algebra on $\R$ and $\lambda$ is the Lebesgue measure: $\lambda([a,b])=b-a$. 
 
 $(\R,\BB(\R),\lambda) $ is $\sigma$-finite: Clearly, $\lambda(\R)=+\infty$. $\R$ can be expressed as the countable union of sets with finite measure. Let
-\[\
+\\[
 \R=\bigcup_{n=1}^\infty I_n, \quad\text{where}\quad I_n=[-n,n].
 \\]
 Since $n$ is a finite real number and for each interval $I_n\in\BB(\R)$ we have that
