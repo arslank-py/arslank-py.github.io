@@ -62,7 +62,7 @@ Since $\mu(B-A)\geq 0$ , it follows that $\mu(A)\leq \mu(B)$ . If $\mu(A)<+\inft
 We now provide two ways of characterizing measures and their respective spaces by how the handle the "total" measure of the space $X$. 
 
 <div class='definition' name='Finite measure'>
-Let $\mu$ be a measure on a measurable space $(X,\AA)$. Then $\mu$ is finite if it satisfies $\mu(X)<+\infty $. By the monotonicity of measures, this implies
+Let $\mu$ be a measure on a measurable space $(X,\AA)$. Then $\mu$ is finite if it satisfies $\mu(X)<+\infty$ . By the monotonicity of measures, this implies
 \[
 \mu(A)<+\infty \quad\text{for all}\quad A\in\AA.
 \]
@@ -71,7 +71,7 @@ Let $\mu$ be a measure on a measurable space $(X,\AA)$. Then $\mu$ is finite if 
 Finite measure possess a number of attractive properties that allow their handling to be much easier to work with than more general measures. The most familiar family of finite measures are probability measures. 
 
 <div class='definition' name='σ-Finite measure'>
-Let $\mu$ be a measure on a measurable space $(X,\AA)$. The measure $\mu$ is called $\sigma$-finite if the set $X$ can be covered with at most countably many measurable sets with finite measure. That is, there exists $\{A_i\}\in\AA$ such that $\mu(A_i)<+\infty $ and
+Let $\mu$ be a measure on a measurable space $(X,\AA)$. The measure $\mu$ is called $\sigma$-finite if the set $X$ can be covered with at most countably many measurable sets with finite measure. That is, there exists $\{A_i\}\in\AA$ such that $\mu(A_i)<+\infty $  and
 \[
 X=\bigcup_{i=1}^\infty A_i \quad\text{for all}\quad i\in\N.   
 \]
@@ -82,10 +82,10 @@ More generally, a set $A\in\AA$ is $\sigma$-finite under $\mu$ if it is the coun
 
 $\sigma$-finite measures generalize finite measures and allows for spaces with potentially infinite measure to be decomposed into countably many subsets with finite measure. This allows the application of techniques of finite-measure to be extended to infinite-measure problems. 
 
-$\textbf{\text{Note:}}$ If the measure space $(X,\AA,\mu) $ is $\sigma$-finite, then $X$ is the union of a sequence $\{B_i\}$ of disjoint sets that belong to $\AA$ and have finite measure under $\mu$; this alternative disjoint sequence $\{B_i\}$ can be formed by choosing a sequence $\{A_i\}$ as in the definition of $\sigma$-finiteness, and then letting
-\[
+**Note:** If the measure space $(X,\AA,\mu) $  is $\sigma$-finite, then $X$ is the union of a sequence $\{B_i\}$ of disjoint sets that belong to $\AA$ and have finite measure under $\mu$; this alternative disjoint sequence $\{B_i\}$ can be formed by choosing a sequence $\{A_i\}$ as in the definition of $\sigma$-finiteness, and then letting
+\\[
 B_1=A_1, \quad\text{and}\quad B_i=A_i-\left(\bigcup_{j=1}^{i-1} A_j\right) \quad\text{if}\quad i>1. 
-\] 
+\\] 
 
-The measure space $(X,\AA,\mu) $ is also called finite or $\sigma$-finite if $\mu$ is finite or $\sigma$-finite.
+The measure space $(X,\AA,\mu) $  is also called finite or $\sigma$-finite if $\mu$ is finite or $\sigma$-finite.
 
