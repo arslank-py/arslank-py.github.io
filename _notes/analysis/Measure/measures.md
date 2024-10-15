@@ -33,7 +33,7 @@ A measure (or countably additive measure) on $\AA$ is a function $\mu:\AA\to[0,+
 
 The finite analogue of both definitions hold, where $\AA$ is an algebra and $\mu:\AA\to[0,+\infty]$ is finitely additive and satsfies $\mu(\emptyset)=0$ . In fact, every countably additive measure is finitely additive (let $A_i=\emptyset $ for $ i>n$). 
 
-We are now ready to define one of the primary building blocks in Measure Theory, providing the structure needed to work with integration to probability to analysis of functions. 
+We are now ready to define one of the primary building blocks in Measure Theory.
 
 <div class='definition' name='Measure space'>
 If $X$ is a set, $\AA$ a $\sigma$-algebra on $X$, and $\mu$ a measure on $\AA$, then the triplet $(X,\AA,\mu) $ is called a measure space. Likewise, if $X$ is a set and $\AA$ is a $\sigma$-algebra on $X$, then the pair $(X,\AA) $ is called a measurable space. If $(X,\AA,\mu) $ is a measure space, then we say $\mu$ is a measure on $(X,\AA) $. 
@@ -95,10 +95,16 @@ $(\R,\BB(\R),\lambda) $ is $\sigma$-finite.
 
 $\sigma$-finite measures generalize finite measures and allows for spaces with potentially infinite measure to be decomposed into countably many subsets with finite measure. This allows the application of techniques of finite-measure to be extended to infinite-measure problems. 
 
-**Note:** If the measure space $(X,\AA,\mu) $  is $\sigma$-finite, then $X$ is the union of a sequence $\lbrace B_i\rbrace$ of disjoint sets that belong to $\AA$ and have finite measure under $\mu$; this alternative disjoint sequence $\lbrace B_i\rbrace$ can be formed by choosing a sequence $\lbrace A_i\rbrace$ as in the definition of $\sigma$-finiteness, and then letting
+**Note:** If the measure space $(X,\AA,\mu) $  is $\sigma$-finite, then $X$ is the union of a sequence $\lbrace B_i\rbrace$ of disjoint sets that belong to $\AA$ and have finite measure under $\mu$; such a sequence $\lbrace B_i\rbrace$ can be formed by choosing a sequence $\lbrace A_i\rbrace$ as in the definition of $\sigma$-finiteness, and then letting
 \\[
 B_1=A_1, \quad\text{and}\quad B_i=A_i-\left(\bigcup_{j=1}^{i-1} A_j\right) \quad\text{if}\quad i>1. 
 \\] 
 
 The measure space $(X,\AA,\mu) $  is also called finite or $\sigma$-finite if $\mu$ is finite or $\sigma$-finite.
 
+<div class='proposition' name='Countable subadditivity of μ'>
+Let $(X,\AA,\mu) $ be a measure space. If $\{A_k\}$ is an arbitrary sequence of sets that belong to $\AA$, then 
+\[
+\mu\left(\bigcup_{k=1}^\infty A_k\right)\leq \sum_{k=1}^\infty \mu(A_k).
+\]
+</div>
