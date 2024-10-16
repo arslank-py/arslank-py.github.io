@@ -108,3 +108,20 @@ Let $(X,\AA,\mu) $ be a measure space. If $\{A_k\}$ is an arbitrary sequence of 
 \mu\left(\bigcup_{k=1}^\infty A_k\right)\leq \sum_{k=1}^\infty \mu(A_k).
 \]
 </div>
+
+<details class='proof'>
+<summary>Proof.</summary>
+ Define a sequence $\{B_k\}$ of subsets of $X$ by letting $B_1=A_1$ and letting $B_k=A_k-\left(\bigcup_{i=1}^{k-1} A_i\right)$ if $k>1$. Then each set $B_k$ belongs to $\AA$ and is a subset of the corresponding $A_k$, thus satisfying $\mu(B_k)\leq \mu(A_k)$. Since in addition the sets $B_k$ are disjoint and satisfy $\bigcup_{k=1}^\infty B_k=\bigcup_{k=1}^\infty A_k$, it follows that 
+ \[
+\mu\left(\bigcup_{k=1}^\infty A_k\right)=\mu\left(\bigcup_{k=1}^\infty B_k\right) = \sum_{k=1}^\infty \mu(B_k)\leq \sum_{k=1}^\infty \mu(A_k). 
+ \]
+</details>
+
+That is, the countable additivity of $\mu$ implies the countably subadditivity of $\mu$. The following proposition will prove to be a very useful tool in the future. 
+
+<div class='proposition' name='Continuity of measure'>
+<ol>
+    <li>If $\{A_k\}$ is an increasing sequence of sets that belong to $\AA$, then $\mu\left(\bigcup_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k)$.</li>
+    <li>If $\{A_k\}$ is an increasing sequence of sets that belong to $\AA$ and $\mu(A_n)<+\infty$ holds for some $n$, then $\mu\left(\bigcap_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k).</li>
+</ol>
+</div>
