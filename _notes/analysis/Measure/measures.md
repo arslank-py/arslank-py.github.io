@@ -141,7 +141,7 @@ First suppose that $\{A_k\}$ is an increasing sequence of sets that belong to $\
 This completes the proof of (a). 
 
 <br><br>
-Now suppose that $\{A_k\}$ is a decreasing sequence of sets that belong to $\AA$ and that $\mu(A_n)<+\infty$ holds for some $n$. We can assume $n=1$. For each $k$ let $C_k=A_1-A_k$. Then $\{C_k\}$ is an increasing sequence of sets that belong to $\{A\}$ and satisfy
+Now suppose that $\{A_k\}$ is a decreasing sequence of sets that belong to $\AA$ and that $\mu(A_n)<+\infty$ holds for some $n$. We can assume $n=1$. For each $k$ let $C_k=A_1-A_k$. Then $\{C_k\}$ is an increasing sequence of sets that belong to $\AA$ and satisfy
 \[
 \bigcup_{k=1}^\infty C_k=A_1-\left(\bigcap_{k=1}^\infty A_k\right).    
 \]
@@ -149,5 +149,17 @@ It follows from part (a) that $\mu\left(\bigcup_{k=1}^\infty C_k\right)=\lim_{k\
 \[
 \mu\left(A_1-\left(\bigcap_{k=1}^\infty A_k\right)\right)=\mu\left(\bigcup_{k=1}^\infty C_k\right)=\lim_{k\to\infty}\mu(C_k)=\lim_{k\to\infty}\mu(A_1-A_k).
 \]
-By the monotonicity of measures and the assumption that $\mu(A_1)<+\infty$, this implies that $\mu\left(\bigcap_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k)$. 
+By Proposition 1 (monotonicity of measures) and the assumption that $\mu(A_1)<+\infty$, this implies that $\mu\left(\bigcap_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k)$. 
 </details>
+
+It is easy to see that this property acts as a sort of measure-analogue to the known result that the limit of a montone sequence of sets $\{E_k\}$ is either its countable union or countable intersection. We now finish off with a few more helpful definitions. 
+
+<div class='definition' name='Borel measure on ℝᵈ'>
+A measure on $(\R^d,\BB(\R^d)) $ is called a Borel measure on $\R^d$. More generally, if $X$ is a Borel subset of $\R^d$ and if $\AA$ is the $\sigma$-algebra consisting of those Borel subsets of $\R^d$ included in $X$, then a measure on $(X,\AA) $ is called a Borel measure on $X$. 
+</div>
+
+<div class='definition' name='Continuous and discrete measures'>
+Suppose $(X,\AA) $ is a measurable space such that for every $x\in X$ the set $\{x\}$ belongs to $\AA$. A finite or $\sigma$-finite measure $\mu$ on $(X,\AA) $ is continuous if $\mu(\{x\})=0$ holds for all $x\in X$ and is discrete if there is a countable subset $D\subseteq X$ such that $\mu(D^c)=0$.  
+</div>
+
+The distinction between the two types of measure is a classic characterization; the latter deals with countable sets, while the former deals with uncountable sets. 

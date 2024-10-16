@@ -27,7 +27,7 @@ Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is an 
 </ol>
 </div>
 
-That is, $\mathscr{A}$ is closed under complimentation, under formation of finite unions, and under formation of finite intersections. 
+That is, $\mathscr{A}$ is closed under complimentation, under formation of finite unions, and under formation of finite intersections. A nice-to-have direct implication is that $\AA$ is also closed under set differences since for $A,B\in\AA$, we have that $A-B=A\cap B^c\in\AA$. This holds for the following collection ($\sigma$-algebras) as well. 
 
 <div class='definition' name='σ-Algebras'>
 Let $X$ be an arbitrary set. A collection $\mathscr{A}$ of subsets of $X$ is a $\sigma$-algebra on $X$ if
