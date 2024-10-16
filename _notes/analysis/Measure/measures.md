@@ -131,3 +131,23 @@ That is, the countable additivity of $\mu$ implies the countably subadditivity o
     \]</li>
 </ol>
 </div>
+
+<details class='proof'>
+<summary>Proof.</summary>
+First suppose that $\{A_k\}$ is an increasing sequence of sets that belong to $\AA$, and define a sequence $\{B_i\}$ of sets by letting $B_1=A_1$ and letting $B_i=A_i-A_{i-1}$ if $i>1$. The sets just constructed are disjoint, belong to $\AA$, and satisfy $A_k=\bigcup_{i=1}^k B_i$ for each $k$. It follows that $\bigcup_{k=1}^\infty A_k=\bigcup_{i=1}^\infty B_i$ and hence that
+\[
+\mu\left(\bigcup_{k=1}^\infty A_k\right)=\sum_{i=1}^\infty \mu(B_i)=\lim_{k\to\infty}\sum_{i=1}^k \mu(B_i)=\lim_{k\to\infty}\mu\left(\bigcup_{i=1}^k B_i\right)=\lim_{k\to\infty}\mu(A_k). 
+\]
+This completes the proof of (a). 
+
+<br><br>
+Now suppose that $\{A_k\}$ is a decreasing sequence of sets that belong to $\AA$ and that $\mu(A_n)<+\infty$ holds for some $n$. We can assume $n=1$. For each $k$ let $C_k=A_1-A_k$. Then $\{C_k\}$ is an increasing sequence of sets that belong to $\{A\}$ and satisfy
+\[
+\bigcup_{k=1}^\infty C_k=A_1-\left(\bigcap_{k=1}^\infty A_k\right).    
+\]
+It follows from part (a) that $\mu\left(\bigcup_{k=1}^\infty C_k\right)=\lim_{k\to\infty}\mu(C_k)$ and hence that
+\[
+\mu\left(A_1-\left(\bigcap_{k=1}^\infty A_k\right)\right)=\mu\left(\bigcup_{k=1}^\infty C_k\right)=\lim_{k\to\infty}\mu(C_k)=\lim_{k\to\infty}\mu(A_1-A_k).
+\]
+By the monotonicity of measures and the assumption that $\mu(A_1)<+\infty$, this implies that $\mu\left(\bigcap_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k)$. 
+</details>
