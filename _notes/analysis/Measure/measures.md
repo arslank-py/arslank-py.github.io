@@ -121,7 +121,13 @@ That is, the countable additivity of $\mu$ implies the countably subadditivity o
 
 <div class='proposition' name='Continuity of measure'>
 <ol>
-    <li>If $\{A_k\}$ is an increasing sequence of sets that belong to $\AA$, then $\mu\left(\bigcup_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k)$.</li>
-    <li>If $\{A_k\}$ is an increasing sequence of sets that belong to $\AA$ and $\mu(A_n)<+\infty$ holds for some $n$, then $\mu\left(\bigcap_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k).</li>
+    <li>If $\{A_k\}$ is an increasing sequence of sets that belong to $\AA$, then 
+    \[
+    \mu\left(\bigcup_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k).
+    \]</li>
+    <li>If $\{A_k\}$ is an increasing sequence of sets that belong to $\AA$ and $\mu(A_n)<+\infty$ holds for some $n$, then 
+    \[
+        \mu\left(\bigcap_{k=1}^\infty A_k\right)=\lim_{k\to\infty}\mu(A_k).
+    \]</li>
 </ol>
 </div>
