@@ -5,6 +5,7 @@ chapter: "Measure Theory"
 section: "algebras"
 layout: note
 permalink: "/notes/analysis/measure/algebras/"
+order: 1
 
 subtitle: 
 date: 2024-10-11

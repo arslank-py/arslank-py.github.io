@@ -5,6 +5,7 @@ chapter: "Measure Theory"
 section: "measures"
 layout: note
 permalink: "/notes/analysis/measure/measures/"
+order: 2
 
 subtitle: 
 date: 2024-10-11

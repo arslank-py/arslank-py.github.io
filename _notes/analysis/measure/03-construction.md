@@ -5,6 +5,7 @@ chapter: "Measure Theory"
 section: "construction"
 layout: note
 permalink: "/notes/analysis/measure/construction/"
+order: 3
 
 subtitle: 
 date: 2024-10-11
@@ -24,7 +25,7 @@ Let $X$ be a set, and let $\mathscr{P}(X)$ be the collection of all subsets of $
     <li>if $A\subseteq B\subseteq X$, then $\mu^*(A)\leq \mu^*(B)$, and</li>
     <li>if $\{A_n\}$ is an infinte sequence of subsets of $X$, then
     \[
-        \mu^*\left(\bigcup_{n=1}^\infty A_n\right)=\sum_{n=1}^\infty \mu^*(A_n).
+        \mu^*\left(\bigcup_{n=1}^\infty A_n\right)\leq\sum_{n=1}^\infty \mu^*(A_n).
     \] 
     </li>
 </ol>
