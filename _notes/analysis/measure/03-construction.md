@@ -20,7 +20,7 @@ We develop one of the standard techniques for constructing measures.
 <div class='definition' name='Outer measure'>
 Let $X$ be a set, and let $\mathscr{P}(X)$ be the collection of all subsets of $X$. An outer measure on $X$ is a function $\mu^*:\mathscr{P}(X)\to[0,+\infty] $ such that
 <ol type="a">
-    <li>$\mu^*(\empty)=0$,</li>
+    <li>$\mu^*(\emptyset)=0$,</li>
     <li>if $A\subseteq B\subseteq X$, then $\mu^*(A)\leq \mu^*(B)$, and</li>
     <li>if $\{A_n\}$ is an infinte sequence of subsets of $X$, then
     \[
@@ -28,8 +28,9 @@ Let $X$ be a set, and let $\mathscr{P}(X)$ be the collection of all subsets of $
     \] 
     </li>
 </ol>
+</div>
 
-Thus an outer measure on $X$ is a monotone and countably subadditive function from $\mathscr{P}(X)$ to $[0,+\infty]$ whose value at $\empty$ is 0. Many important measure can be derived from outer measures by restricting $\mu^*$ to a special $\sigma$-algebra $\MM_{\mu^*}$, which we discuss later. 
+Thus an outer measure on $X$ is a monotone and countably subadditive function from $\mathscr{P}(X)$ to $[0,+\infty]$ whose value at $\emptyset$ is 0. Many important measure can be derived from outer measures by restricting $\mu^*$ to a special $\sigma$-algebra $\MM_{\mu^*}$, which we discuss later. 
 
 #### Examples:
 
