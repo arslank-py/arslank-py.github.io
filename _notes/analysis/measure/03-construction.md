@@ -31,7 +31,7 @@ Let $X$ be a set, and let $\mathscr{P}(X)$ be the collection of all subsets of $
 </ol>
 </div>
 
-Thus an outer measure on $X$ is a monotone and countably subadditive function from $\mathscr{P}(X)$ to $[0,+\infty]$ whose value at $\emptyset$ is 0. Many important measure can be derived from outer measures by restricting $\mu^*$ to a special $\sigma$-algebra $\MM_{\mu^*}$, which we discuss later. 
+Thus an outer measure on $X$ is a monotone and countably subadditive function from $\mathscr{P}(X)$ to $[0,+\infty]$ whose value at $\emptyset$ is 0. Many important measure can be derived from outer measures by restricting $\mu^*$ to a special $\sigma$-algebra which we discuss later. 
 
 #### Examples:
 
