@@ -32,7 +32,7 @@ A norm always induces a metric on $X$ in a natural way; the distance $d:X\times 
 The closed and open balls in $X$ are (respectively) the sets of the form
 \[
 B(x,r)=\{y\in X: \|y-x\|\leq r\}, \\
-B^circ(x,r)=\{y\in X: \|y-x\|<> r\},
+B^\circ(x,r)=\{y\in X: \|y-x\|<> r\},
 \]
 where the radius $r>0$. 
 </div>
