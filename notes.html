@@ -59,7 +59,7 @@ title: notes
                     {% assign chapters = topic.items | group_by: "chapter" %}
                     {% for chapter in chapters %}
                         <div class="chapter">{{ forloop.index }}. {{ chapter.name }}</div>
-                        {% assign sections = chapter.items | sort: "section" %}
+                        {% assign sections = chapter.items | sort: "order" %}
                         {% for section in sections %}
                             <div class="section">{{ forloop.parentloop.index }}.{{ forloop.index }}: <a href="{{ section.url }}">{{ section.title }}</a></div>
                         {% endfor %}
