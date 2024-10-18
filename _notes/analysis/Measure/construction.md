@@ -4,7 +4,7 @@ topic: "Analysis"
 chapter: "Measure Theory"
 section: "construction"
 layout: note
-permalink: "/notes/analysis/measure/measures/"
+permalink: "/notes/analysis/measure/construction/"
 
 subtitle: 
 date: 2024-10-11
