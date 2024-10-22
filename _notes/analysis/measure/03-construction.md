@@ -39,7 +39,7 @@ Let $X$ be an arbitray set, and define $\mu^\*$ on $\PP(X)$ by $\mu^\*(A)=0$ if 
 
 Lebesgue outer measure on $\R$, which we denote $\lambda^\*$, is defined as follows. For each subset $A\subset \R$, let $\CC_A$ be the set of all infinite sequences $\\{(a_i,b_i)\\} $ of bounded open intervals such that $A\subseteq \bigcup_{i=1}^\infty (a_i,b_i) $. Then $\lambda^\*: \PP(\R)\to [0,+\infty] $  is defined by
 \\[
-    \lambda^\*(A)=\inf\left\{\sum_{i=1}^\infty (b_i-a_i) : \{(a_i,b_i)\}\in\CC_A\right\}.
+\lambda^\*(A)=\inf\left\\{\sum_{i=1}^\infty (b_i-a_i) : \\{(a_i,b_i)\\}\in\CC_A\right\\}.
 \\] 
 
 We now confirm that $\lambda^\*$ is in fact an outer measure. 
