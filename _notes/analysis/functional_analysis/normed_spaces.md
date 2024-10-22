@@ -34,7 +34,7 @@ The closed and open balls in $X$ are (respectively) the sets of the form
 B(x,r)=\{y\in X: \|y-x\|\leq r\}, \\
 B^\circ(x,r)=\{y\in X: \|y-x\|< r\},
 \]
-with radius $r>0 $. 
+with radius $r>0$ . 
 </div>
 
 A subset of $X$ is bounded if there is a ball that contains it. 
@@ -42,7 +42,8 @@ A subset of $X$ is bounded if there is a ball that contains it.
 <div class='definition' name='Interior and closure of a set'>
 Let $X$ be a metric space and $A\subseteq X$ a subset. The interior and closure of $A$ are (resectively) the sets
 \[
-\text{int}(A)=A^\circ \{a\in A : \exists B(a,r)\subseteq A, r>0 \}, 
+\text{int}(A)=A^\circ = \{a\in A : \exists B(a,r)\subseteq A, r>0 \}, \\
+\text{cl}(A)=\bar{A} = \{x\in X : \lim_{n\to\infty} a_n=x, a_n\in A \forall n \}. 
 \]
 Clearly, $\text{int}(A)\subseteq A\subseteq \text{cl}(A)$. 
 </div>
