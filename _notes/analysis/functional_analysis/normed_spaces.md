@@ -42,8 +42,8 @@ A subset of $X$ is bounded if there is a ball that contains it.
 <div class='definition' name='Interior and closure of a set'>
 Let $X$ be a metric space and $A\subseteq X$ a subset. The interior and closure of $A$ are (resectively) the sets
 \[
-&\text{int}(A)=A^\circ = \{a\in A : \exists B(a,r)\subseteq A, \text{ } r>0 \}, \\
-&\text{cl}(A)=\bar{A} = \{x\in X : \lim_{n\to\infty} a_n=x,\text{ } a_n\in A \text{ } \forall n \}. 
+\&\text{int}(A)=A^\circ = \{a\in A : \exists B(a,r)\subseteq A, \text{ } r>0 \}, \\
+\&\text{cl}(A)=\bar{A} = \{x\in X : \lim_{n\to\infty} a_n=x,\text{ } a_n\in A \text{ } \forall n \}. 
 \]
 Clearly, $\text{int}(A)\subseteq A\subseteq \text{cl}(A)$. 
 </div>
