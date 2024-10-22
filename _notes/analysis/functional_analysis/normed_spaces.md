@@ -32,9 +32,28 @@ A norm always induces a metric on $X$ in a natural way; the distance $d:X\times 
 The closed and open balls in $X$ are (respectively) the sets of the form
 \[
 B(x,r)=\{y\in X: \|y-x\|\leq r\}, \\
-B^\circ(x,r)=\{y\in X: \|y-x\|<> r\},
+B^\circ(x,r)=\{y\in X: \|y-x\|< r\},
 \]
-where the radius $r>0$. 
+with radius $r>0 $. 
 </div>
 
 A subset of $X$ is bounded if there is a ball that contains it. 
+
+<div class='definition' name='Interior and closure of a set'>
+Let $X$ be a metric space and $A\subseteq X$ a subset. The interior and closure of $A$ are (resectively) the sets
+\[
+int(A)=A^\circ=\{a\in A : \exists B(a,r)}\subseteq A, r>0 \}, \\
+\cl(A)=\bar{A}=\{x\in X : \lim_{n\to\infty} a_n=x, a_n\in A \forall n\}.
+\]
+Clearly, $int(A)\subseteq A\subseteq cl(A)$. 
+</div>
+
+The compatibility between the vector space and its norm topolgy manifests itself by the fact that if $U$ is an open subset of $X$, then so is its translate $x+U$ and its scalar multiple $tU$ (if $t\neq 0$). This follows from the fact that balls, which generate the underlying metric topology, cooperate well with the operations of translation and dilation:
+\\[
+B(x,r)=x+B(0,r), \\quad B(0,tr)=tB(0,r) \\quad (t>0). 
+\\]
+A useful consequence is that a sequence $x_i$ converges to a limit $x$ if and only iff the difference $x_i-x$ converges to 0. 
+
+<br><br>
+A vector space $X$ always admits a norm. Recall that one consequence of Zorn's lemma asserts that any vector space has a basis $\{e_\alpha\}$. That is, any $x\in X$ has a unique representation $x=\sum_{\alpha} x_\alpha e_\alpha$, where all but a finite number of the coefficients $x_\alpha$ are 0. Then $\|x\|:=\sum_\alpha |x_\alpha|$ defines a suitable norm on $X$. 
+
