@@ -53,12 +53,8 @@ These relations, together with the fact that $\varepsilon$ is arbitrary, imply t
 We now compute the outer measure of the subintervals of $\R$. First consider the closed bounded interval $[a,b]$. It is easy to see that $\lambda^*([a,b])\leq b-a$ (cover $[a,b]$ with sequences of open intervals in which the first interval is barely larger than $[a,b]$ and the sum of the lengths of the other intervals is very small). For the reverse inequality, let $\{(a_i,b_i)\}$ be a sequence of bounded open intervals whose union includes $[a,b]$. Since $[a,b]$ is compact, there exists $n\in\N$ such that $[a,b]\subseteq \bigcup_{i=1}^n(a_i,b_i)$. It is easy to check that $b-a\leq \sum_{i=1}^\infty (b_i-a_i)$. Since $\{(a_i,b_i)\}$ was arbitrary, it follows that $b-a\leq \lambda^*([a,b]) and hence $\lambda^*([a,b])=b-a$. 
 </details>
 
-Lebesgue outer measure on $\R^d$, which we denote $\lambda_d^*$, is defined similarly. A $d$-dimensional interval is a subset of $\R^d$ of the form $I_1\times \cdots\times I_d$, where $I_1,\cdots,I_d$ are subintervals of $\R$ and $I_1\times \cdots\times I_d$ is given by
+Lebesgue outer measure on $\R^d$, which we denote $\lambda_d^*$, is defined similarly. The volume of a $d$-dimensional interval $\text{vol}(I_1\times\cdots\times I_d)$ is the product of the lengths of the intervals $I_1,\cdots,I_d$, where $I_i\in\R$ for $i=1,\dots,d$. For each subset $A\subseteq \R^d$, let $\CC_A$ be the set of all sequences $\\{R_i\\}$ of bounded and open $d$-dimensional intervals for which $A\subseteq \bigcup_{i=1}^\infty R_i$. Then $\lambda_d^\*(A)$ is defined as
 \\[
-    I_1\times \cdots\times I_d=\{(x_1,\dots,x_d) : x_i\in I_i \text{ for }i=1,\dots,d\}.
-\\]
-The volume of the $d$-dimensional interval $\text{vol}(I_1\times\cdots\times I_d)$ is the product of the lengths of the intervals $I_1,\cdots,I_d$. For each subset $A\subseteq \R^d$, let $\CC_A$ be the set of all sequences $\\{R_i\\}$ of bounded and open $d$-dimensional intervals for which $A\subseteq \bigcup_{i=1}^\infty R_i$. Then $\lambda^\*(A)$ is defined as
-\\[
-    \lambda^\*(A)=\inf\left\\{\sum_{i=1}^\infty \text{vol}(R_i) : \\{R_i\\}\in\CC_A \right\\}.
+    \lambda_d^\*(A)=\inf\left\\{\sum_{i=1}^\infty \text{vol}(R_i) : \\{R_i\\}\in\CC_A \right\\}.
 \\]
 Just as in the case of $d=1$, $\lambda_d^\*$ is an outer measure and it assigns to each $d$-dimensional intervals its volume. 
