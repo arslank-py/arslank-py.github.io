@@ -53,12 +53,12 @@ Then $\mu^*$ is an outer measure on $X$.
 
 <details class='proof'>
 <summary>Proof.</summary>
-It is clear that $\mu^*(\emptyset)=0$ since any set trivially covers $\emptyset$. If $E\subseteq G$, then $\mu^*(E)\leq \mu^*(G)$ as a covering for $G$ induces a covering for $E$ and thus the set over which we are taking the infimum is smaller for $E$. 
+It is clear that $\mu^*(\emptyset)=0$  since any set trivially covers $\emptyset$. If $E\subseteq G$, then $\mu^*(E)\leq \mu^*(G)$  as a covering for $G$ induces a covering for $E$ and thus the set over which we are taking the infimum is smaller for $E$. 
 
 <br><br>
-We now consider the countable subadditivity of $\mu^*$. Fix $\varepsilon>0$ and let $\{E_k\}_{k=1}^\infty$ be an arbitrary sequence of subsets of $X$. Then for any given $E_k\subseteq X$, there exists a sequence $\{F_j^k\}_{j=1}^\infty$ such that $F_j^k\in\FF$ and $E_k\subseteq \bigcup_{j=1}^\infty F_j^k$. Moreover, we may choose this sequence so that
+We now consider the countable subadditivity of $\mu^*$. Fix $\varepsilon>0$  and let $\{E_k\}_{k=1}^\infty$  be an arbitrary sequence of subsets of $X$. Then for any given $E_k\subseteq X$, there exists a sequence $\{F_j^k\}_{j=1}^\infty$  such that $F_j^k\in\FF$  and $E_k\subseteq \bigcup_{j=1}^\infty F_j^k$ . Moreover, we may choose this sequence so that
 \[
-    \sum_{j=1}^\infty \rho(F_j^k)\leq \mu^*(E_k)+\frac{\varepsilon}{2^k}.
+    \sum_{j=1}^\infty \rho(F_j^k) < \mu^*(E_k)+\frac{\varepsilon}{2^k}.
 \]
 Then we have
 \[
@@ -66,9 +66,9 @@ Then we have
 \]
 and
 \[
-    \mu^*\left(\bigcup_{k=1}^\infty E_k\right)\leq \sum_{j,k=1}^\infty \rho(F_j^k)\leq \sum_{k=1}^\infty \mu^*(E_k)+\varepsilon.
+    \mu^*\left(\bigcup_{k=1}^\infty E_k\right)\leq \sum_{j,k=1}^\infty \rho(F_j^k) < \sum_{k=1}^\infty \mu^*(E_k)+\varepsilon.
 \]
 Since $\varepsilon$ was arbitrary, we conclude that $\mu^*$ is an outer measure. 
 </details>
 
-Note that for any $F\subseteq X$ the set over which we are taking the infimum is nonempty since $X\in\FF$. 
+Note that for any $E\subseteq X$ the set over which we are taking the infimum is nonempty since $X\in\FF$. 
