@@ -66,5 +66,9 @@ and
 \[
 \sum_{j=1}^\infty (b_j-a_j)<\sum_{n=1}^\infty \left(\lambda^*(A_n)+\frac{\varepsilon}{2^n}\right)=\sum_{n=1}^\infty \lambda^*(A_n)+\varepsilon. 
 \]
+These relations, together with the fact that $\varepsilon$ is arbitrary, imply that $\lambda^*(\bigcup_{n=1}^\infty A_n)\leq \sum_{n=1}^\infty\lambda^*(A_n)$. Thus $\lambda^*$ is an outer measure. 
+
+<br>
+We now compute the outer measure of the subintervals of $\R$. First consider the closed bounded interval $[a,b]$. It is easy to see that $\lambda^*([a,b])\leq b-a$ (cover $[a,b]$ with sequences of open intervals in which the first interval is barely larger than $[a,b]$ and the sum of the lengths of the other intervals is very small). For the reverse inequality, let $\{(a_i,b_i)\}$ be a sequence of bounded open intervals whose union includes $[a,b]$. Since $[a,b]$ is compact, there exists $n\in\N$ such that $[a,b]\subseteq \bigcup_{i=1}^n(a_i,b_i)$. It is easy to check that $b-a\leq \sum_{i=1}^\infty (b_i-a_i). Since $\{(a_i,b_i)\}$ was arbitrary, it follows that $b-a\leq \lambda^*([a,b]) and hence $\lambda^*([a,b])=b-a$. 
 </details>
 
