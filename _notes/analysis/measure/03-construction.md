@@ -62,11 +62,11 @@ We now consider the countable subadditivity of $\mu^*$. Fix $\varepsilon>0$ and 
 \]
 Then we have
 \[
-    E\subseteq \bigcup_{j,k=1}^\infty F_j^k
+    \bigcup_{k=1}^\infty E_k\subseteq \bigcup_{j,k=1}^\infty F_j^k
 \]
-and moreover,
+and
 \[
-    \mu^*\left(\bigcup_{j,k=1}^\infty F_j^k\right)\leq \sum_{j,k=1}^\infty \rho(F_j^k)\leq \sum_{k=1}^\infty \mu^*(E_k)+\varepsilon.
+    \mu^*\left(\bigcup_{k=1}^\infty E_k\right)\leq \sum_{j,k=1}^\infty \rho(F_j^k)\leq \sum_{k=1}^\infty \mu^*(E_k)+\varepsilon.
 \]
 Since $\varepsilon$ was arbitrary, we conclude that $\mu^*$ is an outer measure. 
 </details>
