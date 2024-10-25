@@ -36,17 +36,17 @@ Thus an outer measure on $X$ is a monotone and countably subadditive function fr
 #### Examples:
 
 <ol>
-    <li>Let $X$ be an arbitray set, and define $\mu^\*$ on $\PP(X)$ by $\mu^\*(A)=0$ if $A$ is countable, and $\mu^\*(A)=1$ if $A$ is uncountable. Then $\mu^\*$ is an outer measure.
+    <li>Let $X$ be an arbitray set, and define $\mu^*$ on $\PP(X)$ by $\mu^*(A)=0$ if $A$ is countable, and $\mu^*(A)=1$ if $A$ is uncountable. Then $\mu^*$ is an outer measure.
     </li>
-    <li>Let $X$ be an infinite set, and define $\mu^\*$ on $\PP(X)$ by $\mu^\*(A)=0$ if $A$ is finite, and $\mu^\*(A)=1$ if $A$ is infinite. Then $\mu^\*$ fails to be countably subadditive and so not an outer measure.</li>
+    <li>Let $X$ be an infinite set, and define $\mu^*$ on $\PP(X)$ by $\mu^*(A)=0$ if $A$ is finite, and $\mu^*(A)=1$ if $A$ is infinite. Then $\mu^*$ fails to be countably subadditive and so not an outer measure.</li>
 </ol>
 
-To define an outer measure, we often construct the outer measure on some "nice" sets (like rectangles or balls), followed by approximating arbitrary sets in our space from above using countable unions of these nice sets. That is, an outer measure of an arbirary set can be obtained by taking the smallest measure of the nice sets that cover it. We will now make this intuition precise with the following proposition. 
+To define an outer measure, we often construct the outer measure on some "nice" sets (like rectangles or balls), followed by approximating arbitrary sets in our space from above using countable unions of these nice sets. That is, an outer measure of an arbirary set can be obtained by taking the smallest measure of the nice sets that cover it. We now make this intuition precise with the following proposition. 
 
-<div class='proposition' name='Constructing and outer measure'>
-Let $X$ be a set and suppose $\FF\subseteq \PP(X)$ is an arbitrary collection of subsets such that $\emptyset,X\in\FF$. Let $\rho:\FF\to[0,\infty]$ be such that $\rho(\emptyset)=0$. Then $\mu^*:\PP(X)\to[0,\infty]$ for all $A\subseteq X$ is defined as
+<div class='proposition' name='Constructing an outer measure'>
+Let $X$ be a set and suppose $\FF\subseteq \PP(X)$ is an arbitrary collection of subsets such that $ \emptyset,X\in\FF$. Let $\rho:\FF\to[0,+\infty]$ be such that $\rho(\emptyset)=0$. Then $\mu^*:\PP(X)\to[0,+\infty]$ for all $E\subseteq X$ is defined as
 \[
-    \mu^*(A)=\inf\left\{\sum_{i=1}^\infty \rho(E_i) : E_i\in\FF, \text{ }A\subseteq\bigcup_{i=1}^\infty E_i\right\}.
+    \mu^*(A)=\inf\left\{\sum_{i=1}^\infty \rho(F_i) : F_i\in\FF, \text{ }E\subseteq\bigcup_{i=1}^\infty F_i\right\}.
 \]
 Then $\mu^*$ is an outer measure on $X$. 
 </div>
