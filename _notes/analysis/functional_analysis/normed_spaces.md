@@ -57,3 +57,10 @@ A useful consequence is that a sequence $x_i$ converges to a limit $x$ if and on
 <br>
 A vector space $X$ always admits a norm. Recall that one consequence of Zorn's lemma asserts that any vector space has a basis $\{e_\alpha\}$. That is, any $x\in X$ has a unique representation $x=\sum_{\alpha} x_\alpha e_\alpha$, where all but a finite number of the coefficients $x_\alpha$ are 0. Then $\\|x\\|:=\sum_\alpha |x_\alpha|$ defines a suitable norm on $X$. 
 
+<div class='definition' name='Equivalent norms'>
+Two norms $\|\cdot\|_1$ and $\|\cdot\|_2$ on $X$ are said to be equivalent if there exist positive constants $c,d$ such that
+\[
+\|x\|_1\leq c\|x\|_2, \quad \|x\|_2\leq d\|x\|_1 \quad \forall x\in X.
+\]
+</div>
+That is, each ball around 0 of one type contains a ball around 0 of the other type. This property characterizes the equality of the topologies induced by the two metrices. Hence, we say that two norms on $X$ are equivalent if and only if they induce the same metric topology. 
