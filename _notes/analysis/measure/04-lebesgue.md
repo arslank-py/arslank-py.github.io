@@ -8,7 +8,7 @@ permalink: "/notes/analysis/measure/lebesgue/"
 order: 4
 
 subtitle: 
-date: 2024-10-11
+date: 2024-10-26
 keywords: analysis, measure theory
 published: true
 references: "Cohn, Donald. (2013). Measure theory. 2nd revised ed."

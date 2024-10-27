@@ -8,7 +8,7 @@ permalink: "/notes/analysis/measure/measures/"
 order: 2
 
 subtitle: 
-date: 2024-10-11
+date: 2024-10-12
 keywords: analysis, measure theory
 published: true
 references: "Cohn, Donald. (2013). Measure theory. 2nd revised ed."

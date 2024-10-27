@@ -8,7 +8,7 @@ permalink: "/notes/analysis/measure/construction/"
 order: 3
 
 subtitle: 
-date: 2024-10-11
+date: 2024-10-22
 keywords: analysis, measure theory
 published: true
 references: "Cohn, Donald. (2013). Measure theory. 2nd revised ed.; Folland, G. B. (1999). Real analysis: Modern techniques and their applications (2nd ed.)."
