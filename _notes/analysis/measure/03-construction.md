@@ -76,7 +76,7 @@ Since $\varepsilon$ was arbitrary, we conclude that $\mu^*$ is an outer measure.
 Note that for any $E\subseteq X$ the set over which we are taking the infimum is nonempty since $X\in\FF$. 
 
 <br><br>
-As briefly referenced above, Lebesgue's notion of a measurable set was defined using inner and outer measures ($\lambda^*(E)=\lambda_{*}(E)$). While Lebesgue's formulation relies on certain topological properties of $\R$ (e.g., completeness, separability, regularity of $\lambda$), Carath&eacute;odory’s criterion generalizes the characterization of measurability to abstract spaces. See a nice counterexample to Lebesgue's formulation in <a href="https://math.stackexchange.com/questions/4381477/understanding-when-a-set-is-outer-measurable">this link</a>. 
+As briefly referenced above, Lebesgue's notion of a measurable set was defined using inner and outer measures ($\lambda^\*(E)=\lambda_{\*}(E)$). While Lebesgue's formulation relies on certain topological properties of $\R$ (e.g., completeness, separability, regularity of $\lambda$), Carath&eacute;odory’s criterion generalizes the characterization of measurability to abstract spaces. See a nice counterexample to Lebesgue's formulation in <a href="https://math.stackexchange.com/questions/4381477/understanding-when-a-set-is-outer-measurable">this link</a>. 
 
 <div class='definition' name='Carath&eacute;odory’s criterion for μ*-measurability'>
 Let $X$ be a set and let $\mu^*$ be an outer measure on $X$. A subset $F\subseteq X$ is $\mu^*$-measurable (or measurable with respect to $\mu^*$) if
@@ -86,15 +86,38 @@ Let $X$ be a set and let $\mu^*$ be an outer measure on $X$. A subset $F\subsete
 holds for every subset $E\subseteq X$. 
 </div>
 
-Intuitively, a $mu^*$-measurable subset of $X$ is one that divides each subset of $X$ in such a way that the sizes (as measured by $\mu^\*$) of the pieces add properly. 
+Intuitively, a $\mu^\*$-measurable subset of $X$ is one that divides each subset of $X$ in such a way that the sizes (as measured by $\mu^\*$) of the pieces add properly. 
 
 <br><br>
 Note that the subadditivity of the outer measure $\mu^\*$ implies that
 \\[
-    \mu^\*(E)\leq \mu^\*(E\cap F)+\mu^\*(E\cap F^c)
+    \mu^\*(E)=\mu^*((E\cap F)\cup(E\cap F^c))\leq \mu^\*(E\cap F)+\mu^\*(E\cap F^c)
 \\]
-holds for all subsets $E,F\subseteq X$. Thus to check that a subset $F\subseteq X$ is in fact $mu^\*$-measurable, we need only check that
-\\[
-    \mu^\*(E)\geq \mu^\*(E\cap F)+\mu^\*(E\cap F^c) \tag{1}
-\\]
-holds for each subset $E\subseteq X$. Note also that the inequality (1) certainly holds if $\mu^\*(E)=+\infty$. Thus the $\mu^\*$-measurability of $F$ can be verified by checking that (1) holds for each $E$ that satisfies $\mu^\*(E)<+\infty$. 
+holds for all subsets $E,F\subseteq X$. Thus it suffices to check the reverse inequality. Moreover, if $\mu^\*(E)=+\infty$, this is trivially satisfied, so we have the following lemma.
+
+<div class='lemma'>
+Let $\mu^*$ be an outer measure on $X$. A set $F\subseteq X$ is $\mu^*$-measurable if and only if
+\[
+    \mu^\*(E)\geq \mu^\*(E\cap F)+\mu^\*(E\cap F^c)
+\]
+holds for each subset $E\subseteq X$, where $\mu^*(E)<+\infty$. 
+</div>
+
+## Extension Theorems
+
+We now arrive at two fundamental theorems, allowing us to obtain genuine measures from outer measures. This is done by taking an outer measure and restricting ourselves to the $\mu^\*$-measurable sets. We first prove a quick result proceeding from Carath&eacute;odory’s criterion and lemma 1. This proposition will aid us in our proof of Carath&eacute;odory theorem below and implies the restriction of $\mu^\*$ to $\MM_{\mu^\*}$ is complete (which we define later down the road). 
+
+<div class='proposition'>
+Let $\mu^*$ be an outer measure on $X$. Then each subset $F\subseteq X$ that satisfies $\mu^*(F)=0$ or that satisfies $\mu^*(F^c)=0$ is $\mu^*$-measurable. 
+</div>
+
+<details class='proof'>
+<summary>Proof.</summary>
+Assume that $\mu^*(F)=0$ or that $\mu^*(F^c)=0$. According to lemma 1, we need only check that each subset $E\subseteq X$ satisfies
+\[
+    \mu^\*(E)\geq \mu^\*(E\cap F)+\mu^\*(E\cap F^c).
+\]
+However our assumption about $F$ and the monotonicity of $\mu^*$ imply that one of the terms on the right-hand side of this inequality vanishes and that the other is at most $\mu^*(E)$; thus the required inequality follows. 
+</details>
+
+It follows that the sets $\emptyset$ and $X$ are measurable for every outer measure on $X$. 
